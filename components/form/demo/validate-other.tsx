@@ -164,6 +164,7 @@ const App: React.FC = () => (
     </Form.Item>
 
     <Form.Item
+       rules={[{ required: true, message: 'Please pick an item!' }]}
       name="upload"
       label="Upload"
       valuePropName="fileList"
